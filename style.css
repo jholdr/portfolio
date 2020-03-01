@@ -1,0 +1,64 @@
+html, body {
+  background-color: aliceblue !important;
+}
+
+body {
+  height: auto;
+  width: 100vw;
+}
+
+nav {
+  background-color: white !important;
+  height: 5vh;
+
+}
+
+#main-container {
+  height: auto !important;
+  width: 100% !important;
+}
+
+#row-one,#row-two, #row-three {
+height: 100vh !important;
+padding: 0 !important;
+
+}
+
+
+#cur-brand {
+  font-family: 'Vidaloka' !important;
+  font-size: 24px;
+  color: #cad8e3;
+  letter-spacing: 1;
+
+}
+
+#hr-brand {
+  background-color: #264e70;
+  width: 152px;
+  height: 2px;
+}
+
+#name-brand {
+  font-family: 'Raleway' !important;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  color: #264e70;
+}
+
+#jumbo {
+  background-color: white;
+  height: 350px;
+
+}
+
+#jumbo-text {
+  margin-left: 10px;
+  margin-top: 5%;
+}
+
+footer {
+  height: 5vh;
+}
