@@ -1,1 +1,123 @@
-hello world!!
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Codeologi.com - Jasmine Holder | Healthcare Focused Web Application Developer </title>
+
+    <!--- StyleSheets --->
+    <link href="style.css" rel="stylesheet">
+
+    <link href="tabs.css" rel="stylesheet">
+
+    <!-- Fonts --->
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Noto+Serif+TC|Raleway|Vidaloka&display=swap" rel="stylesheet">
+    <!----- BootStrap --->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+  </head>
+
+  <body class="min-vh-100">
+    <nav class="navbar navbar-expand-lg">
+      <div class="nav-container">
+          <a class="navbar-brand">
+            <div id="cur-brand"></div>
+            <div id="hr-brandd"></div>
+            <div id="name-brand"></div>
+          </a>
+      </div>
+    </nav>
+
+    <div class="container-fluid" id="main-container">
+
+      <div class="row" id="row-one">
+        <div class="p-2 w-50 bd-highlight" style="background-color:turquoise;">{{ WHO }}
+          <a href="#row-two">Scroll to What</a>
+        </div>
+        <div class="p-2 w-50 bd-highlight" style="background-color:green;">{{ IMAGE }}</div>
+      </div>
+
+      <!------------------ Services Tab -------------------->
+
+      <div class="row" id="row-two">
+        <div class="p-2 w-100 bd-highlight" style="background-color:lavender;">
+
+          {{ WHAT }}
+
+        <div class="tabset">
+            <!-- Tab 1 -->
+        <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
+        <label for="tab1">Märzen</label>
+        <!-- Tab 2 -->
+        <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
+        <label for="tab2">Rauchbier</label>
+        <!-- Tab 3 -->
+        <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
+        <label for="tab3">Dunkles Bock</label>
+
+        <div class="tab-panels">
+          <section id="marzen" class="tab-panel">
+            <h2>6A. Märzen</h2>
+        </section>
+          <section id="rauchbier" class="tab-panel">
+            <h2>6B. Rauchbier</h2>
+
+          </section>
+          <section id="dunkles" class="tab-panel">
+            <h2>6C. Dunkles Bock</h2>
+          </section>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+          <!--<a href="#row-three">Scroll to Contact</a>--->
+        </div>
+      </div>
+
+
+      <!------------- Contact Form ------------>
+      <div class="row" id="row-three">
+        <div class="p-2 w-100 bd-highlight" style="background-color:salmon;">{{ Contact }}</div>
+      </div>
+    </div>
+
+
+    <footer></footer>
+
+
+  </body>
+
+  <script>
+$(document).ready(function(){
+    $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
+
+
+</html>
